@@ -1,0 +1,35 @@
+$purp: #2b012f;
+$dpurp: #452094;
+$newWhite: #fafafa;
+
+.contact-me {
+	display: flex;
+	flex-direction: column;
+	background-color: $purp;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 900px;
+	color: $newWhite;
+	font-size: 2rem;
+}
+
+.contact-me .icons {
+	font-size: 5rem;
+	margin-top: 1rem;
+	align-items: space-between;
+	justify-content: space-between;
+	justify-items: space-between;
+	align-content: space-between;
+}
+
+.contact-me .icons a {
+	margin: 2rem;
+	cursor: pointer;
+	color: $newWhite;
+}
+
+.contact-me .icons span:hover,
+a:hover {
+	color: $dpurp;
+}

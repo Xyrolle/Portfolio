@@ -1,17 +1,17 @@
 import React, { useRef } from 'react';
+import { useHistory } from 'react-router';
 import { useIntersection } from 'use-intersection';
 import gsap from 'gsap';
-import { Icon, InlineIcon } from '@iconify/react';
+
+import { Icon } from '@iconify/react';
 import angleDoubleDown from '@iconify/icons-fa/angle-double-down';
-import linkedinRect from '@iconify/icons-brandico/linkedin-rect';
-import githubIcon from '@iconify/icons-bytesize/github';
-import instagramIcon from '@iconify/icons-cib/instagram';
 
 import '../styles/Page.scss';
 
 const Page = () => {
 	const sectionRef = useRef(null);
 	const intersecting = useIntersection(sectionRef);
+	const { push } = useHistory();
 
 	const fadeIn = (element) => {
 		gsap.to(element, 1, {
@@ -48,7 +48,7 @@ const Page = () => {
 					</div>
 					<div className='text-bottom'>
 						<div className='text'>Web Developer</div>
-						<a href='#about' className='arrows'>
+						<a href='#about' className='arrows' id='link'>
 							<Icon icon={angleDoubleDown} />
 						</a>
 					</div>
@@ -77,7 +77,12 @@ const Page = () => {
 			</div>
 			<h2 className='contact'>
 				Are <span>You</span> interested?
-				<button className='button'>
+				<button
+					className='contact-btn'
+					onClick={() => {
+						push('/contactMe');
+					}}
+				>
 					<span>Yes</span>
 				</button>
 			</h2>

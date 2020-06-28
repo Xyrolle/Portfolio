@@ -13,7 +13,6 @@ const App = () => {
 					<Route exact path='/' component={Page} />
 				</Switch>
 			</Router>
-			<Page />
 		</div>
 	);
 };

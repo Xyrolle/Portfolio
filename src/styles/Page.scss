@@ -1,6 +1,7 @@
-$purp: #7640ed;
+$purp: #2b012f;
 $dpurp: #452094;
 $yell: #ffdc7c;
+$newWhite: #fafafa;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
@@ -37,12 +38,17 @@ $yell: #ffdc7c;
 	}
 }
 
+html {
+	scroll-behavior: smooth;
+	background-color: $newWhite;
+}
+
 #header {
 	height: 860px;
 }
 
 .animated-title,
-a {
+#link {
 	color: #222;
 	font-family: Roboto, Arial, sans-serif;
 	height: 90vmin;
@@ -125,7 +131,7 @@ a {
 	background: $purp;
 	height: 700px;
 	padding: 60px 24px;
-	color: #fff;
+	color: $newWhite;
 	overflow: hidden;
 	&:after {
 		content: "";
@@ -166,13 +172,13 @@ span {
 	font-weight: 600;
 }
 
-.button {
+.contact-btn {
 	display: block;
 	margin: 4rem auto 0 auto;
 	border-radius: 4px;
-	background-color: #2b012f;
+	background-color: $purp;
 	border: none;
-	color: #ffffff;
+	color: $newWhite;
 	text-align: center;
 	font-size: 2rem;
 	padding: 20px;
@@ -181,14 +187,14 @@ span {
 	cursor: pointer;
 }
 
-.button span {
+.contact-btn span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
 	transition: 0.5s;
 }
 
-.button span:after {
+.contact-btn span:after {
 	content: '\00bb';
 	position: absolute;
 	opacity: 0;
@@ -197,11 +203,11 @@ span {
 	transition: 0.5s;
 }
 
-.button:hover span {
+.contact-btn:hover span {
 	padding-right: 25px;
 }
 
-.button:hover span:after {
+.contact-btn:hover span:after {
 	opacity: 1;
 	right: 0;
 }
@@ -211,12 +217,7 @@ span {
 	margin: 400px auto 340px auto;
 	font-size: 3rem;
 	font-weight: 400;
-}
-
-.contact-me {
-	text-align: center;
-	font-size: 2rem;
-	margin: 60px;
+	background-color: $newWhite;
 }
 
 .sectionThird {
@@ -228,11 +229,6 @@ span {
 }
 
 // scrollbar
-* {
-	scrollbar-width: thin;
-	scrollbar-color: #fff gray;
-}
-
 *::-webkit-scrollbar {
 	width: 12px;
 }
