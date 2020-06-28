@@ -18,7 +18,7 @@ const ContactMe = () => {
 				<a href='https://github.com/Xyrolle'>
 					<Icon icon={githubIcon} />
 				</a>
-				<a href='mailto:email@email.de'>
+				<a href='mailto:serii.hmeli123123@mail.ru'>
 					<Icon icon={mail4Icon} />
 				</a>
 			</div>
