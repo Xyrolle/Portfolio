@@ -121,12 +121,12 @@ a {
 }
 
 /* second section */
-.sectionSecond,
-.sectionThird {
+.sectionSecond {
 	background: $purp;
 	height: 700px;
 	padding: 60px 24px;
 	color: #fff;
+	overflow: hidden;
 	&:after {
 		content: "";
 		position: absolute;
@@ -162,9 +162,69 @@ a {
 	}
 }
 
+span {
+	font-weight: 600;
+}
+
+.button {
+	display: block;
+	margin: 4rem auto 0 auto;
+	border-radius: 4px;
+	background-color: #2b012f;
+	border: none;
+	color: #ffffff;
+	text-align: center;
+	font-size: 2rem;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.contact {
+	text-align: center;
+	margin: 400px auto 340px auto;
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+.contact-me {
+	text-align: center;
+	font-size: 2rem;
+	margin: 60px;
+}
+
 .sectionThird {
-	margin-top: 400px;
 	height: 200px;
+}
+
+.sectionThird {
+	background-color: $purp;
 }
 
 // scrollbar

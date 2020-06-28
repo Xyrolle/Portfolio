@@ -9,6 +9,7 @@
     "gsap": "^3.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "use-intersection": "^0.2.1"
   },
@@ -35,6 +36,8 @@
   },
   "devDependencies": {
     "@iconify/icons-brandico": "^1.0.7",
+    "@iconify/icons-bytesize": "^1.0.3",
+    "@iconify/icons-cib": "^1.0.3",
     "@iconify/icons-fa": "^1.0.3",
     "@iconify/react": "^1.1.3"
   }

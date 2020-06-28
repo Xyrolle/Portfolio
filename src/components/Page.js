@@ -4,6 +4,8 @@ import gsap from 'gsap';
 import { Icon, InlineIcon } from '@iconify/react';
 import angleDoubleDown from '@iconify/icons-fa/angle-double-down';
 import linkedinRect from '@iconify/icons-brandico/linkedin-rect';
+import githubIcon from '@iconify/icons-bytesize/github';
+import instagramIcon from '@iconify/icons-cib/instagram';
 
 import '../styles/Page.scss';
 
@@ -73,18 +75,12 @@ const Page = () => {
 					</p>
 				</div>
 			</div>
-			<footer>
-				<div className='sectionThird' id='contact-info'>
-					<div ref={sectionRef} className='inner'>
-						<h3 className='fadeIn'>Contact Me</h3>
-						<p className='fadeIn'>
-							<li>
-								<Icon icon={linkedinRect} />
-							</li>
-						</p>
-					</div>
-				</div>
-			</footer>
+			<h2 className='contact'>
+				Are <span>You</span> interested?
+				<button className='button'>
+					<span>Yes</span>
+				</button>
+			</h2>
 		</div>
 	);
 };
