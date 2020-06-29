@@ -16,7 +16,8 @@
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "3.4.1",
 		"semantic-ui-react": "^0.88.2",
-		"use-intersection": "^0.2.1"
+		"use-intersection": "^0.2.1",
+		"uuid": "^8.2.0"
 	},
 	"scripts": {
 		"predeploy": "npm run build",
@@ -30,8 +31,16 @@
 		"extends": "react-app"
 	},
 	"browserslist": {
-		"production": [ ">0.2%", "not dead", "not op_mini all" ],
-		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
 	},
 	"devDependencies": {
 		"@iconify/icons-brandico": "^1.0.7",

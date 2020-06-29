@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
+import gsap from 'gsap';
 
 import { Icon } from '@iconify/react';
 import linkedinRect from '@iconify/icons-brandico/linkedin-rect';
@@ -8,10 +9,23 @@ import mail4Icon from '@iconify/icons-icomoon-free/mail4';
 import '../styles/ContactMe.scss';
 
 const ContactMe = () => {
+	const contactMe = useRef(null);
+
+	useEffect(() => {
+		gsap.to('.fade', 1, {
+			opacity : 1,
+			y       : 100,
+			ease    : 'back.out(1.7)',
+			stagger : {
+				amount : 0.05
+			}
+		});
+	}, []);
+
 	return (
-		<div className='contact-me'>
-			<p>Feel free to reach out to me</p>
-			<div className='icons'>
+		<div className='contact-me' ref={contactMe}>
+			<p className='fade'>Feel free to reach out to me</p>
+			<div className='icons fade'>
 				<a href='https://www.linkedin.com/in/serghei-hmeli-59aa43172/'>
 					<Icon icon={linkedinRect} />
 				</a>
