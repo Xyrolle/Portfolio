@@ -7,7 +7,7 @@ import eyeIcon from '@iconify/icons-mdi/eye';
 import '../styles/ProjectCard.scss';
 
 const ProjectCard = ({ title, img, gif, git, live, proportions }) => {
-	const [ bgImage, setBgImage ] = useState(gif);
+	const [ bgImage, setBgImage ] = useState(img);
 
 	const handleMouseOver = () => {
 		setBgImage(gif);
