@@ -314,7 +314,6 @@ span {
 
 @media only screen and (max-height: 480px) {
 	.sectionSecond {
-		padding-bottom: 300px !important;
 		padding-top: 0 !important;
 		overflow: scroll;
 
@@ -325,5 +324,11 @@ span {
 		.cover-img {
 			width: 0 !important;
 		}
+	}
+}
+
+@media only screen and (max-height: 700px) {
+	.sectionSecond {
+		padding-bottom: 360px !important;
 	}
 }
