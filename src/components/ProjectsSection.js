@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-
+import { v4 as uuid_v4 } from 'uuid';
 import { useIntersection } from 'use-intersection';
 import { easeSlowIn, easeSlowOut } from '../utils/Animations';
 
@@ -7,7 +7,7 @@ import ProjectCard from './ProjectCard';
 
 import '../styles/ProjectsSection.scss';
 
-import twentyFourtyEightImg from '../assets/images/2048.png';
+import twentyFourtyEightImg from '../assets/images/2048.jpg';
 import twentyFourtyEightGif from '../assets/gifs/2048.gif';
 
 import weatherImg from '../assets/images/weather.jpg';
@@ -27,7 +27,7 @@ const projectCards = [
 		proportions : 'img-square',
 		git         : '2048'
 	},
-	{ title: 'Weather App', img: weatherImg, gif: weatherGif, proportions: 'img-square', git: 'Weather-App' },
+	{ title: 'Weather App', img: weatherImg, gif: weatherGif, proportions: 'img-horizontal', git: 'Weather-App' },
 	{ title: 'Calculator', img: calculatorImg, gif: calculatorGif, proportions: 'img-vertical', git: 'Calculator' },
 	{ title: 'Todo App', img: todosImg, gif: todosGif, proportions: 'img-horizontal', git: 'Todo-App' }
 ];
@@ -52,6 +52,7 @@ export const ProjectsSection = () => {
 						git={project.git}
 						live={project.live}
 						proportions={project.proportions}
+						key={uuid_v4()}
 					/>
 				))}
 			</div>

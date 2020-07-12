@@ -157,7 +157,7 @@ a {
 	}
 	.inner {
 		position: relative;
-		font-size: 1.2rem;
+		font-size: 1.4rem;
 		top: 60px;
 		h3 {
 			margin: 8px 0;
@@ -172,7 +172,7 @@ a {
 	}
 	.point {
 		line-height: 2;
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 }
 
@@ -242,10 +242,48 @@ span {
 	border: 3px solid #dfe6e9;
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 480px) {
 	.sectionSecond {
 		p .point {
-			font-size: 1.2rem;
+			font-size: 1.3rem !important;
+			line-height: 1.6;
+		}
+
+		h3 {
+			font-size: 2.2rem !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.sectionSecond {
+		p .point {
+			line-height: 1.4 !important;
+		}
+
+		h3 {
+			font-size: 2.2rem !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 1360px) {
+	.sectionSecond {
+		p .point {
+			font-size: 1.4rem !important;
+			line-height: 1.6;
+		}
+
+		h3 {
+			font-size: 2.2rem !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.sectionSecond {
+		p .point {
+			font-size: 1.7rem;
 			line-height: 1.6;
 		}
 
@@ -259,11 +297,13 @@ span {
 	.sectionSecond {
 		padding-top: 0px;
 		padding-bottom: 240px;
+
 		.inner p {
 			width: 100%;
 		}
+
 		.cover-img {
-			width: 0px;
+			width: 0;
 		}
 
 		.point {

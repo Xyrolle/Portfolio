@@ -35,6 +35,7 @@ const Page = () => {
 		'I am proficient in: CSS, SCSS, TypeScript, NodeJS, Express, jQuery, SQL and a lot more...',
 		'I have good algorithm and data structure skills',
 		'I know how to make UI tests and how to use React testing library',
+		'I have experience making and working with Rest API’s',
 		'I am a fast learner and good team player',
 		'Current Position: Front-end Intern at EBS Integrator'
 	];

@@ -7,7 +7,7 @@ import eyeIcon from '@iconify/icons-mdi/eye';
 import '../styles/ProjectCard.scss';
 
 const ProjectCard = ({ title, img, gif, git, live, proportions }) => {
-	const [ bgImage, setBgImage ] = useState(img);
+	const [ bgImage, setBgImage ] = useState(gif);
 
 	const handleMouseOver = () => {
 		setBgImage(gif);
@@ -20,9 +20,10 @@ const ProjectCard = ({ title, img, gif, git, live, proportions }) => {
 	return (
 		<div className='project-card'>
 			<h3 className='title'>{title}</h3>
-			<div
+			<img
+				src={`${bgImage}`}
+				alt='bg-img'
 				className={'project-img ' + proportions}
-				style={{ backgroundImage: `url('${bgImage}')` }}
 				onMouseOver={handleMouseOver}
 				onMouseLeave={handleMouseLeave}
 			/>

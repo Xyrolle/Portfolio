@@ -67,3 +67,10 @@ a:hover {
 		padding-bottom: 0 !important;
 	}
 }
+
+@media only screen and (max-height: 340px) {
+	.contact-me .icons {
+		font-size: 0 !important;
+		padding-bottom: 0 !important;
+	}
+}

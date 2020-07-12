@@ -4,13 +4,18 @@ $yell: #ffdc7c;
 $newWhite: #fafafa;
 
 .project-card {
-	margin: 4% 5%;
+	margin: 10% 2%;
+	// width: 100%;
+	// width: 30rem;
+	// height: 38rem;
 
 	.project-img {
 		background-size: cover;
 		border-radius: 4%;
 		background-repeat: no-repeat;
 		background-size: 100%;
+		// width: 100% !important;
+		// height: 100% !important;
 	}
 
 	.title {
@@ -62,40 +67,52 @@ $newWhite: #fafafa;
 	}
 
 	.img-horizontal {
-		width: 600px;
-		height: 465px;
+		// height: 460px !important;
+		// width: 80%;
+		// height: 60% !important;
 	}
 
 	.img-vertical {
-		width: 24rem;
-		height: 29rem;
+		width: 33.2rem;
 	}
 
 	.img-square {
-		width: 24rem;
-		height: 26rem;
+		// width: 24rem;
+		// height: 26rem;
+		width: 34rem;
+		height: 36.2rem;
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
 	.project-card {
 		.img-horizontal {
+			width: 26rem;
+			height: 22rem;
+		}
+
+		.img-square {
 			width: 24rem;
-			height: 20rem;
+			height: 24rem;
+		}
+
+		.img-vertical {
+			width: 24rem;
+			height: 26rem;
 		}
 
 		margin: 10%;
 	}
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 430px) {
 	.project-card {
 		.title {
 			font-size: 1.8rem;
 		}
 
 		.img-horizontal {
-			width: 18rem;
+			width: 20rem;
 			height: 14rem;
 		}
 
@@ -109,6 +126,19 @@ $newWhite: #fafafa;
 			height: 21rem;
 		}
 
-		margin: 6% auto;
+		margin: 20% auto;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	.project-card {
+		.title {
+			font-size: 1.8rem;
+		}
+
+		.img-horizontal {
+			width: 18rem;
+			height: 14rem;
+		}
 	}
 }
