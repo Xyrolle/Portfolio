@@ -1,0 +1,23 @@
+$newWhite: #fafafa;
+
+div h2 {
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 900;
+	word-wrap: break-word;
+	width: 40%;
+	margin: 6rem auto 0 auto;
+}
+
+.projects-container {
+	display: flex;
+	place-content: center;
+	flex-flow: row wrap;
+	background-color: $newWhite;
+}
+
+@media only screen and (max-width: 680px) {
+	div h2 {
+		width: 80%;
+	}
+}

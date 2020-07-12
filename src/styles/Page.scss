@@ -1,0 +1,289 @@
+$purp: #2b012f;
+$dpurp: #452094;
+$yell: #ffdc7c;
+$newWhite: #fafafa;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+@keyframes showTopText {
+	0% {
+		transform: translate3d(0, 100%, 0);
+	}
+	40%,
+	60% {
+		transform: translate3d(0, 50%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes showBottomText {
+	0% {
+		transform: translate3d(0, -100%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes showArrows {
+	0% {
+		transform: translate3d(0, -100%, 0);
+		opacity: 0;
+	}
+	100% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+	background-color: $newWhite;
+}
+
+#header {
+	height: 100vh;
+}
+
+.animated-title,
+#link {
+	color: #222;
+	font-family: Roboto, Arial, sans-serif;
+	height: 90vmin;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 82vmin;
+}
+
+.animated-title > div {
+	height: 50%;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.animated-title > div div {
+	font-size: 11vmin;
+	padding: 2vmin 0;
+	position: absolute;
+}
+.animated-title > div div span {
+	display: block;
+}
+
+.animated-title > div.text-top {
+	border-bottom: 1vmin solid #000;
+	top: 0;
+}
+
+.animated-title > div.text-top div {
+	animation: showTopText 1s;
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	bottom: 0;
+	transform: translate(0, 100%);
+}
+
+.animated-title > div.text-top div span:first-child {
+	color: #767676;
+}
+
+.animated-title > div.text-bottom,
+a {
+	bottom: 0;
+}
+
+.animated-title > div.text-bottom .text {
+	animation: showBottomText 0.5s;
+	animation-delay: 1.75s;
+	animation-fill-mode: forwards;
+	top: 0;
+	transform: translate(0, -100%);
+}
+
+.animated-title > div.text-bottom a {
+	display: inline-block;
+	animation: showArrows 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	transform: translate(0, -100%);
+	top: 200px;
+	right: 360px;
+	font-size: 60px;
+}
+
+#header .text-bottom {
+	.arrows {
+		width: 0;
+		font-size: 3rem;
+	}
+	.arrows:hover {
+		color: #888888;
+	}
+}
+
+.animated-title > div.text-bottom .arrows:hover {
+	color: $purp;
+}
+
+/* second section */
+.sectionSecond {
+	background: $purp;
+	height: 100vh;
+	padding: 5rem 24px;
+	color: $newWhite;
+	overflow: hidden;
+	&:after {
+		content: "";
+		position: absolute;
+		background: $dpurp;
+		height: 600px;
+		width: 100px;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+	}
+	.cover-img {
+		width: 40vw;
+		height: 100vh;
+		float: right;
+		right: 6vw;
+		bottom: 18vh;
+		position: relative;
+	}
+	.inner {
+		position: relative;
+		font-size: 1.2rem;
+		top: 60px;
+		h3 {
+			margin: 8px 0;
+			font-size: 4rem;
+			font-weight: 900;
+			word-wrap: break-word;
+		}
+		p {
+			width: 50%;
+			overflow-wrap: break-word;
+		}
+	}
+	.point {
+		line-height: 2;
+		font-size: 1.4rem;
+	}
+}
+
+span {
+	font-weight: 600;
+}
+
+.contact-btn {
+	display: block;
+	margin: 4rem auto 0 auto;
+	border-radius: 4px;
+	background-color: $purp;
+	border: none;
+	color: $newWhite;
+	text-align: center;
+	font-size: 2rem;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.contact-btn span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.contact-btn span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.contact-btn:hover span {
+	padding-right: 25px;
+}
+
+.contact-btn:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.contact {
+	text-align: center;
+	margin: 300px auto 400px auto;
+	font-size: 3rem;
+	font-weight: 400;
+	background-color: $newWhite;
+}
+
+// scrollbar
+*::-webkit-scrollbar {
+	width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #dfe6e9;
+}
+*::-webkit-scrollbar-thumb {
+	background-color: #636e72;
+	border-radius: 20%;
+	border: 3px solid #dfe6e9;
+}
+
+@media only screen and (max-width: 410px) {
+	.sectionSecond {
+		p .point {
+			font-size: 1.2rem;
+			line-height: 1.6;
+		}
+
+		h3 {
+			font-size: 2.2rem !important;
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.sectionSecond {
+		padding-top: 0px;
+		padding-bottom: 240px;
+		.inner p {
+			width: 100%;
+		}
+		.cover-img {
+			width: 0px;
+		}
+
+		.point {
+			font-size: 1.2em;
+		}
+	}
+}
+
+@media only screen and (max-height: 480px) {
+	.sectionSecond {
+		padding-bottom: 300px !important;
+		padding-top: 0 !important;
+		overflow: scroll;
+
+		.inner .cover-img {
+			width: 0;
+		}
+
+		.cover-img {
+			width: 0 !important;
+		}
+	}
+}

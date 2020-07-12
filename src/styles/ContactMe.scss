@@ -1,0 +1,69 @@
+$dpurp: #6132c5;
+$newWhite: #fafafa;
+
+.contact-me {
+	display: flex;
+	flex-direction: column;
+	background: rgb(3, 1, 1);
+	background: linear-gradient(
+		90deg,
+		rgba(3, 1, 1, 0.7049194677871149) 0%,
+		rgba(74, 31, 55, 1) 0%,
+		rgba(43, 1, 32, 1) 19%,
+		rgba(43, 1, 47, 1) 66%,
+		rgba(73, 4, 55, 1) 99%
+	);
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	color: $newWhite;
+	font-size: 2rem;
+}
+
+.contact-me .icons {
+	font-size: 5rem;
+	margin-top: 1rem;
+	padding-bottom: 300px;
+}
+
+.contact-me .icons a {
+	margin: 2rem;
+	cursor: pointer;
+	color: $newWhite;
+}
+
+.contact-me .icons a:hover,
+a:hover {
+	color: $dpurp;
+}
+
+.contact-me h2 {
+	font-size: 1.8rem;
+	margin: 0;
+}
+
+@media only screen and (max-width: 440px) {
+	.contact-me {
+		background: rgb(135, 97, 139) !important;
+		background: radial-gradient(circle, rgba(135, 97, 139, 1) 2%, rgba(78, 29, 83, 1) 95%) !important;
+		.icons a {
+			margin: 1.1rem;
+			color: $newWhite;
+		}
+		h2 {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media only screen and (max-height: 450px) {
+	.contact-me .icons a {
+		height: 200vh;
+		padding-bottom: 0 !important;
+	}
+
+	.contact-me .icons {
+		padding-bottom: 0 !important;
+	}
+}
