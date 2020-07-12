@@ -4,18 +4,11 @@ $yell: #ffdc7c;
 $newWhite: #fafafa;
 
 .project-card {
-	margin: 10% 2%;
-	// width: 100%;
-	// width: 30rem;
-	// height: 38rem;
+	margin: 10% 4%;
 
 	.project-img {
-		background-size: cover;
 		border-radius: 4%;
-		background-repeat: no-repeat;
 		background-size: 100%;
-		// width: 100% !important;
-		// height: 100% !important;
 	}
 
 	.title {
@@ -67,20 +60,17 @@ $newWhite: #fafafa;
 	}
 
 	.img-horizontal {
-		// height: 460px !important;
-		// width: 80%;
-		// height: 60% !important;
+		width: 40rem;
+		height: 30rem;
 	}
 
 	.img-vertical {
-		width: 33.2rem;
+		height: 30.2rem;
 	}
 
 	.img-square {
-		// width: 24rem;
-		// height: 26rem;
-		width: 34rem;
-		height: 36.2rem;
+		width: 28rem;
+		height: 30rem;
 	}
 }
 
