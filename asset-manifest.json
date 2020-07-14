@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.9ac59bdd.chunk.css",
-    "main.js": "/Portfolio/static/js/main.2ea0dcd5.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.2ea0dcd5.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.399872bd.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.399872bd.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.aba7c214.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.aba7c214.js.map",
-    "static/js/2.e9c26a7c.chunk.js": "/Portfolio/static/js/2.e9c26a7c.chunk.js",
-    "static/js/2.e9c26a7c.chunk.js.map": "/Portfolio/static/js/2.e9c26a7c.chunk.js.map",
+    "static/js/2.2b8b7fcb.chunk.js": "/Portfolio/static/js/2.2b8b7fcb.chunk.js",
+    "static/js/2.2b8b7fcb.chunk.js.map": "/Portfolio/static/js/2.2b8b7fcb.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.27ad9ddbfef52d3b27c85d863ddb9463.js": "/Portfolio/precache-manifest.27ad9ddbfef52d3b27c85d863ddb9463.js",
+    "precache-manifest.734e4fce3d7ecb1c21da3ed0bea5e002.js": "/Portfolio/precache-manifest.734e4fce3d7ecb1c21da3ed0bea5e002.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/main.9ac59bdd.chunk.css.map": "/Portfolio/static/css/main.9ac59bdd.chunk.css.map",
-    "static/js/2.e9c26a7c.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.e9c26a7c.chunk.js.LICENSE.txt",
+    "static/js/2.2b8b7fcb.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.2b8b7fcb.chunk.js.LICENSE.txt",
     "static/media/2048.jpg": "/Portfolio/static/media/2048.7279487d.jpg",
     "static/media/2048.gif": "/Portfolio/static/media/2048.a5c2033a.gif",
     "static/media/calculator.gif": "/Portfolio/static/media/calculator.79fa7418.gif",
     "static/media/calculator.jpg": "/Portfolio/static/media/calculator.9f6ebbc7.jpg",
+    "static/media/chat.png": "/Portfolio/static/media/chat.b39d29f3.png",
     "static/media/todos.jpg": "/Portfolio/static/media/todos.08b55f6e.jpg",
     "static/media/todos.gif": "/Portfolio/static/media/todos.b9334107.gif",
     "static/media/weather.gif": "/Portfolio/static/media/weather.7c82e4bf.gif",
@@ -23,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.aba7c214.js",
-    "static/js/2.e9c26a7c.chunk.js",
+    "static/js/2.2b8b7fcb.chunk.js",
     "static/css/main.9ac59bdd.chunk.css",
-    "static/js/main.2ea0dcd5.chunk.js"
+    "static/js/main.399872bd.chunk.js"
   ]
 }
