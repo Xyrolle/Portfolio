@@ -19,6 +19,8 @@ import calculatorGif from '../assets/gifs/calculator.gif';
 import todosImg from '../assets/images/todos.jpg';
 import todosGif from '../assets/gifs/todos.gif';
 
+import chatImg from '../assets/images/chat.png';
+
 const projectCards = [
 	{
 		title       : '2048',
@@ -29,7 +31,8 @@ const projectCards = [
 	},
 	{ title: 'Weather App', img: weatherImg, gif: weatherGif, proportions: 'img-horizontal', git: 'Weather-App' },
 	{ title: 'Calculator', img: calculatorImg, gif: calculatorGif, proportions: 'img-vertical', git: 'Calculator' },
-	{ title: 'Todo App', img: todosImg, gif: todosGif, proportions: 'img-horizontal', git: 'Todo-App' }
+	{ title: 'Todo App', img: todosImg, gif: todosGif, proportions: 'img-horizontal', git: 'Todo-App' },
+	{ title: 'Chat App', img: chatImg, gif: chatImg, proportions: 'img-horizontal', git: 'Chat' }
 ];
 
 export const ProjectsSection = () => {
