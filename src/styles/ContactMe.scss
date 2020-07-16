@@ -48,11 +48,16 @@ a:hover {
 		background: rgb(135, 97, 139) !important;
 		background: radial-gradient(circle, rgba(135, 97, 139, 1) 2%, rgba(78, 29, 83, 1) 95%) !important;
 		.icons a {
-			margin: 1.1rem;
 			color: $newWhite;
 		}
+
+		.icons {
+			font-size: 4rem;
+			text-align: center;
+		}
+
 		h2 {
-			font-size: 1.6rem;
+			font-size: 1.4rem;
 		}
 	}
 }
