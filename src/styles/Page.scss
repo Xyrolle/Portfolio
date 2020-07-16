@@ -176,6 +176,10 @@ a {
 	}
 }
 
+#about {
+	padding-bottom: 100px;
+}
+
 span {
 	font-weight: 600;
 }
@@ -222,7 +226,7 @@ span {
 
 .contact {
 	text-align: center;
-	margin: 300px auto 400px auto;
+	margin: 200px auto 300px auto;
 	font-size: 3rem;
 	font-weight: 400;
 	background-color: $newWhite;
@@ -247,6 +251,10 @@ span {
 		height: 80vh;
 		.inner p {
 			width: 100%;
+		}
+
+		.contact-btn {
+			font-size: 1.2rem;
 		}
 
 		.cover-img {

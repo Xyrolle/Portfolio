@@ -48,16 +48,24 @@ a:hover {
 		background: rgb(135, 97, 139) !important;
 		background: radial-gradient(circle, rgba(135, 97, 139, 1) 2%, rgba(78, 29, 83, 1) 95%) !important;
 		.icons a {
+			margin: 1.1rem;
 			color: $newWhite;
 		}
+		h2 {
+			font-size: 1.6rem;
+		}
+	}
+}
 
+@media only screen and (max-width: 346px) {
+	.contact-me {
 		.icons {
 			font-size: 4rem;
 			text-align: center;
 		}
 
 		h2 {
-			font-size: 1.4rem;
+			font-size: 1.6rem;
 		}
 	}
 }
@@ -69,13 +77,6 @@ a:hover {
 	}
 
 	.contact-me .icons {
-		padding-bottom: 0 !important;
-	}
-}
-
-@media only screen and (max-height: 340px) {
-	.contact-me .icons {
-		font-size: 0 !important;
 		padding-bottom: 0 !important;
 	}
 }
