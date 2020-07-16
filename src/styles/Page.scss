@@ -184,52 +184,58 @@ span {
 	font-weight: 600;
 }
 
-.contact-btn {
-	display: block;
-	margin: 4rem auto 0 auto;
-	border-radius: 4px;
-	background-color: $purp;
-	border: none;
-	color: $newWhite;
-	text-align: center;
-	font-size: 2rem;
-	padding: 20px;
-	width: 200px;
-	transition: all 0.5s;
-	cursor: pointer;
-}
+// third section
+.sectionThird {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	margin-bottom: 4rem;
+	.contact {
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 400;
+		background-color: $newWhite;
+		margin: 0 auto;
+	}
+	.contact-btn {
+		display: block;
+		margin: 4rem auto 0 auto;
+		border-radius: 4px;
+		background-color: $purp;
+		border: none;
+		color: $newWhite;
+		text-align: center;
+		font-size: 2rem;
+		padding: 20px;
+		width: 200px;
+		transition: all 0.5s;
+		cursor: pointer;
+	}
 
-.contact-btn span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
-}
+	.contact-btn span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+	}
 
-.contact-btn span:after {
-	content: '\00bb';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.5s;
-}
+	.contact-btn span:after {
+		content: '\00bb';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		right: -20px;
+		transition: 0.5s;
+	}
 
-.contact-btn:hover span {
-	padding-right: 25px;
-}
+	.contact-btn:hover span {
+		padding-right: 25px;
+	}
 
-.contact-btn:hover span:after {
-	opacity: 1;
-	right: 0;
-}
-
-.contact {
-	text-align: center;
-	margin: 200px auto 300px auto;
-	font-size: 3rem;
-	font-weight: 400;
-	background-color: $newWhite;
+	.contact-btn:hover span:after {
+		opacity: 1;
+		right: 0;
+	}
 }
 
 // scrollbar

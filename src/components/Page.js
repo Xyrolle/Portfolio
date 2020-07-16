@@ -76,17 +76,19 @@ const Page = () => {
 				</div>
 			</div>
 			<ProjectsSection />
-			<h2 className='contact ease-slow' ref={interestedSectionRef}>
-				Are <span>You</span> interested?
-				<button
-					className='contact-btn'
-					onClick={() => {
-						push('/contactMe');
-					}}
-				>
-					<span>Yes</span>
-				</button>
-			</h2>
+			<div className='sectionThird'>
+				<h2 className='contact ease-slow' ref={interestedSectionRef}>
+					Are <span>You</span> interested?
+					<button
+						className='contact-btn'
+						onClick={() => {
+							push('/contactMe');
+						}}
+					>
+						<span>Yes</span>
+					</button>
+				</h2>
+			</div>
 		</div>
 	);
 };
