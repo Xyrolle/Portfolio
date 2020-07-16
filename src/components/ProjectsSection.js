@@ -30,7 +30,7 @@ const projectCards = [
 		git         : '2048'
 	},
 	{ title: 'Weather App', img: weatherImg, gif: weatherGif, proportions: 'img-horizontal', git: 'Weather-App' },
-	{ title: 'Calculator', img: calculatorImg, gif: calculatorGif, proportions: 'img-vertical', git: 'Calculator' },
+	{ title: 'Calculator', img: calculatorImg, gif: calculatorGif, proportions: 'img-square', git: 'Calculator' },
 	{ title: 'Todo App', img: todosImg, gif: todosGif, proportions: 'img-horizontal', git: 'Todo-App' },
 	{ title: 'Chat App', img: chatImg, gif: chatImg, proportions: 'img-horizontal', git: 'Chat' }
 ];
